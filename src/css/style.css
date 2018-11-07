@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  font-size: 1.6rem; }
+
+code {
+  font-family: Monaco, monospace;
+  font-size: 1.6rem;
+  line-height: 100%;
+  background-color: #777;
+  padding: 0.2em;
+  letter-spacing: -0.05em;
+  word-break: normal;
+  color: #f7f7f7; }
+
+.section-hello {
+  background-color: #f7f7f7;
+  position: relative;
+  margin: 0 auto;
+  top: 10vh;
+  height: 60vh;
+  width: 80vw;
+  padding: 4rem; }
