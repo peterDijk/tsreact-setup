@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export interface Props {
+interface Props {
   name: string
   enthusiasmLevel?: number
 }
@@ -20,7 +20,7 @@ class Hello extends React.Component<Props, State> {
   }
 
   getExclamationMarks(numChars: number) {
-    return Array(numChars + 1).join('!');
+    return Array(numChars + 1).join('!')
   }
 
   onIncrement = () => this.updateEnthusiasm(this.state.currentEnthusiasm + 1)
@@ -38,8 +38,8 @@ class Hello extends React.Component<Props, State> {
         <p>
           Hello {`${name} ${this.getExclamationMarks(this.state.currentEnthusiasm)}`}
         </p>
-        <button onClick={this.onIncrement}>+</button>
-        <button onClick={this.onDecrement}>-</button>
+        <button onClick={this.onIncrement} className="btn">+</button>
+        <button onClick={this.onDecrement} className="btn">-</button>
       </section>
     )
   }

@@ -1,0 +1,13 @@
+.btn {
+  width: 6rem;
+  height: 3rem;
+  background-color: $color-gray-dark;
+  margin: 1rem 1rem;
+  transition: all .2s;
+
+  &:active {
+    transform: translateY(.2rem);
+    box-shadow: 0 .5rem 1rem rgba($color: $color-black, $alpha: .4)
+  }
+  
+}
