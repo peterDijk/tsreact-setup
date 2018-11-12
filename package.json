@@ -16,10 +16,15 @@
     "compile:sass": "yarn node-sass -w ./src/sass/main.scss ./src/css/style.css"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.9",
     "@types/node": "^10.12.2",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "react-test-renderer": "^16.6.1",
     "typescript": "^3.1.6"
   }
 }
