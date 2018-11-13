@@ -22,3 +22,9 @@ it('throws when the enthusiasm level is negative', () => {
     enzyme.shallow(<Hello name='Daniel' enthusiasmLevel={-1} />);
   }).toThrow();
 });
+
+it('adds a ! to the text', () => {
+  const hello = enzyme.shallow(<Hello name='Daniel' enthusiasmLevel={1}/>)
+  hello.find('.btn-inc').simulate('click')
+  expect(hello.find('.greeting').text()).toEqual('Hello Daniel!!')
+})

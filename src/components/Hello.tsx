@@ -38,8 +38,8 @@ class Hello extends React.Component<Props, State> {
         <p className="greeting">
           Hello {`${name}${this.getExclamationMarks(this.state.currentEnthusiasm)}`}
         </p>
-        <button onClick={this.onIncrement} className="btn">+</button>
-        <button onClick={this.onDecrement} className="btn">-</button>
+        <button onClick={this.onIncrement} className="btn btn-inc">+</button>
+        <button onClick={this.onDecrement} className="btn btn-dec">-</button>
       </section>
     )
   }
